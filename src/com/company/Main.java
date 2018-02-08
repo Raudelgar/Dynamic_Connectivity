@@ -6,6 +6,40 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Union Find API
+        int count = 0;
+        int p = 0;
+        int q = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter N value: ");
+        int N = sc.nextInt();
+        System.out.println("N value is: "+N);
+        Union_Find uf = new Union_Find(N);
+
+        while (N >= 0) {
+            if (count == 0) {
+                System.out.println("Enter first value: ");
+                p = sc.nextInt();
+                System.out.println("First value is: "+p);
+                uf.createList(p);
+                count ++;
+            }if (count == 1) {
+                System.out.println("Enter second value: ");
+                q = sc.nextInt();
+                System.out.println("Second value is: "+q);
+                uf.createList(q);
+                count ++;
+            }
+            if (!uf.connected(p, q)) {
+                uf.union(p,q);
+                System.out.println(p+" "+q);
+            }
+
+            N --;
+            count = 0;
+        }
+
+        uf.toStringMap();
 
 
         //BinarySearch example
@@ -16,21 +50,6 @@ public class Main {
         //Euclid example
 //        System.out.println(Euclid.greatest_Common_Divisor(20,10));
 
-//        int N = 0;
-//        int p = 0;
-//        int q = 0;
-//        int count = 1;
-//
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter a number: ");
-//        N = sc.nextInt();
-//        while(count > 0) {
-//            System.out.println("Enter a number: ");
-//            p = sc.nextInt();
-//            q = sc.nextInt();
-//            count --;
-//        }
-//        System.out.println(N+" "+p+" "+q);
     }
 
 

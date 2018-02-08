@@ -4,7 +4,8 @@ import java.util.*;
 
 public class Union_Find {
     private int n;
-    private Map<String, List<Integer>> arrList = new HashMap<>();
+    private String name;
+    private Map<String, int[]> arrList = new HashMap<>();
 
 
     public Union_Find(int n) {
@@ -19,9 +20,35 @@ public class Union_Find {
 
     public void union (int p, int q) {
         //create a new array adding both arguments into it
-        int[] arr1 = new int[2];
-        arr1[0] = p;
-        arr1[1] = q;
+    }
+
+
+    public void createList (int n) {
+        name = "list"+n;
+        arrList.put(name,new int[1]);
+    }
+
+    public void createListUnion () {
+        name = "listUnion"+n;
+        arrList.put(name,new int[1]);
+    }
+
+    public void findArr(int m) {
+        for (Map.Entry<String,int[]> e : arrList.entrySet()) {
+            if (e.getKey().contains(Integer.toString(m))) {
+                e.getValue()[0] = m;
+            }
+        }
+    }
+
+
+    public void toStringMap() {
+        for (Map.Entry<String, int[]> e : arrList.entrySet()) {
+            int[] a = e.getValue();
+            for (int i = 0; i < a.length; i++) {
+                System.out.println(String.valueOf(a[i]));
+            }
+        }
     }
 
 }
