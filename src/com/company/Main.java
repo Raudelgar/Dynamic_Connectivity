@@ -6,36 +6,37 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Quick Find Example
+        //Quick Union Example
         int count = 0;
         int p = 0;
         int q = 0;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter N value: ");
+        System.out.print("Enter N value: ");
         int N = sc.nextInt();
-        System.out.println("N value is: "+N);
-        Quick_Find qf = new Quick_Find(N);
+        System.out.print("N value is: "+N+"\n");
+        Quick_Union qu = new Quick_Union(N);
 
         while (N >= 0) {
             outloop: {
                 if (count == 0) {
-                    System.out.println("Enter first value: ");
+                    System.out.print("Enter first value: ");
                     p = sc.nextInt();
-                    if (qf.check_Value_Size(p))
+                    if (qu.check_Value_Size(p))
                         break outloop;
-                    System.out.println("First value is: "+p);
-                    count ++;
-                }if (count == 1) {
-                    System.out.println("Enter second value: ");
-                    q = sc.nextInt();
-                    if (qf.check_Value_Size(q))
-                        break outloop;
-                    System.out.println("Second value is: "+q);
+                    System.out.print("First value is: "+p+"\n");
                     count ++;
                 }
-                if (!qf.connected(p, q)) {
-                    qf.union(p,q);
-                    System.out.println(p+" "+q);
+                if (count == 1) {
+                    System.out.print("Enter second value: ");
+                    q = sc.nextInt();
+                    if (qu.check_Value_Size(q))
+                        break outloop;
+                    System.out.print("Second value is: "+q+"\n");
+                    count ++;
+                }
+                if (!qu.connected(p, q)) {
+                    qu.union(p,q);
+                    System.out.print("union("+p+", "+q+")\n");
                 }
             }
 
@@ -44,7 +45,48 @@ public class Main {
             count = 0;
         }
 
-        qf.toStringArr();
+        qu.toStringArr();
+
+
+        //Quick Find Example
+//        int count = 0;
+//        int p = 0;
+//        int q = 0;
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter N value: ");
+//        int N = sc.nextInt();
+//        System.out.println("N value is: "+N);
+//        Quick_Find qf = new Quick_Find(N);
+//
+//        while (N >= 0) {
+//            outloop: {
+//                if (count == 0) {
+//                    System.out.println("Enter first value: ");
+//                    p = sc.nextInt();
+//                    if (qf.check_Value_Size(p))
+//                        break outloop;
+//                    System.out.println("First value is: "+p);
+//                    count ++;
+//                }if (count == 1) {
+//                    System.out.println("Enter second value: ");
+//                    q = sc.nextInt();
+//                    if (qf.check_Value_Size(q))
+//                        break outloop;
+//                    System.out.println("Second value is: "+q);
+//                    count ++;
+//                }
+//                if (!qf.connected(p, q)) {
+//                    qf.union(p,q);
+//                    System.out.println(p+" "+q);
+//                }
+//            }
+//
+//
+//            N --;
+//            count = 0;
+//        }
+//
+//        qf.toStringArr();
 
 
         //BinarySearch example
