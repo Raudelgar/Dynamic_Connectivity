@@ -14,14 +14,14 @@ public class Main {
         System.out.print("Enter N value: ");
         int N = sc.nextInt();
         System.out.print("N value is: "+N+"\n");
-        Quick_Union qu = new Quick_Union(N);
+        Weighted_Quick_Union wqu = new Weighted_Quick_Union(N);
 
         while (N >= 0) {
             outloop: {
                 if (count == 0) {
                     System.out.print("Enter first value: ");
                     p = sc.nextInt();
-                    if (qu.check_Value_Size(p))
+                    if (wqu.check_Value_Size(p))
                         break outloop;
                     System.out.print("First value is: "+p+"\n");
                     count ++;
@@ -29,13 +29,13 @@ public class Main {
                 if (count == 1) {
                     System.out.print("Enter second value: ");
                     q = sc.nextInt();
-                    if (qu.check_Value_Size(q))
+                    if (wqu.check_Value_Size(q))
                         break outloop;
                     System.out.print("Second value is: "+q+"\n");
                     count ++;
                 }
-                if (!qu.connected(p, q)) {
-                    qu.union(p,q);
+                if (!wqu.connected(p, q)) {
+                    wqu.union(p,q);
                     System.out.print("union("+p+", "+q+")\n");
                 }
             }
@@ -45,8 +45,51 @@ public class Main {
             count = 0;
         }
 
-        qu.toStringArr();
+        wqu.toStringArr();
 
+
+
+
+        //Quick Union Example
+//        int count = 0;
+//        int p = 0;
+//        int q = 0;
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter N value: ");
+//        int N = sc.nextInt();
+//        System.out.print("N value is: "+N+"\n");
+//        Quick_Union qu = new Quick_Union(N);
+//
+//        while (N >= 0) {
+//            outloop: {
+//                if (count == 0) {
+//                    System.out.print("Enter first value: ");
+//                    p = sc.nextInt();
+//                    if (qu.check_Value_Size(p))
+//                        break outloop;
+//                    System.out.print("First value is: "+p+"\n");
+//                    count ++;
+//                }
+//                if (count == 1) {
+//                    System.out.print("Enter second value: ");
+//                    q = sc.nextInt();
+//                    if (qu.check_Value_Size(q))
+//                        break outloop;
+//                    System.out.print("Second value is: "+q+"\n");
+//                    count ++;
+//                }
+//                if (!qu.connected(p, q)) {
+//                    qu.union(p,q);
+//                    System.out.print("union("+p+", "+q+")\n");
+//                }
+//            }
+//
+//
+//            N --;
+//            count = 0;
+//        }
+//
+//        qu.toStringArr();
 
         //Quick Find Example
 //        int count = 0;
