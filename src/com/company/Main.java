@@ -19,7 +19,8 @@ public class Main {
         System.out.print("N value is: "+N+"\n");
         Weighted_Quick_Union wqu = new Weighted_Quick_Union(N);
 
-        while (N >= 0) {
+        int c = 7;
+        while (c > 0) {
             outloop: {
                 if (count == 0) {
                     System.out.print("Enter first value: ");
@@ -39,16 +40,23 @@ public class Main {
                 }
                 if (!wqu.connected(p, q)) {
                     wqu.union(p,q);
+                    //if p and q have the same depth size, q gets p root
                     System.out.print("union("+p+", "+q+")\n");
                 }
             }
 
 
-            N --;
+            c --;
             count = 0;
         }
 
         wqu.toStringArr();
+
+        int[] test = {4,3,8,9,5,6,0,1,2,7};
+
+        for (int i = 0; i < test.length; i++) {
+            System.out.print("Testing largest: Input => "+test[i]+" and the max value is: "+wqu.find(test[i])+"\n");
+        }
 
 
 
