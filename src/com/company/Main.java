@@ -7,59 +7,70 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Weighted Quick Union Example
-        int count = 0;
-        int p = 0;
-        int q = 0;
-        PathCompresion_Quick_Union pcqu;
+        Successor_Delete sd = new Successor_Delete(10);
+        System.out.print("The array origin: \n");
+        sd.toStringArr();
+        System.out.println();
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter N value: ");
-        int N = sc.nextInt();
-        System.out.print("N value is: "+N+"\n");
-        Weighted_Quick_Union wqu = new Weighted_Quick_Union(N);
+        sd.removeValue(6);
+        System.out.print("After remove 6:\n");
+        sd.toStringArr();
+        System.out.println();
 
-        int c = 7;
-        while (c > 0) {
-            outloop: {
-                if (count == 0) {
-                    System.out.print("Enter first value: ");
-                    p = sc.nextInt();
-                    if (wqu.check_Value_Size(p))
-                        break outloop;
-                    System.out.print("First value is: "+p+"\n");
-                    count ++;
-                }
-                if (count == 1) {
-                    System.out.print("Enter second value: ");
-                    q = sc.nextInt();
-                    if (wqu.check_Value_Size(q))
-                        break outloop;
-                    System.out.print("Second value is: "+q+"\n");
-                    count ++;
-                }
-                if (!wqu.connected(p, q)) {
-                    wqu.union(p,q);
-                    //if p and q have the same depth size, q gets p root
-                    System.out.print("union("+p+", "+q+")\n");
-                }
-            }
-
-
-            c --;
-            count = 0;
-        }
-
-        wqu.toStringArr();
-
-        int[] test = {4,3,8,9,5,6,0,1,2,7};
-
-        for (int i = 0; i < test.length; i++) {
-            System.out.print("Testing largest: Input => "+test[i]+" and the max value is: "+wqu.find(test[i])+"\n");
-        }
+        System.out.print("The successor of 5 is: "+sd.findSuccessor(5));
 
 
 
+//        //Weighted Quick Union Example
+//        int count = 0;
+//        int p = 0;
+//        int q = 0;
+//        PathCompresion_Quick_Union pcqu;
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter N value: ");
+//        int N = sc.nextInt();
+//        System.out.print("N value is: "+N+"\n");
+//        Weighted_Quick_Union wqu = new Weighted_Quick_Union(N);
+//
+//        int c = 7;
+//        while (c > 0) {
+//            outloop: {
+//                if (count == 0) {
+//                    System.out.print("Enter first value: ");
+//                    p = sc.nextInt();
+//                    if (wqu.check_Value_Size(p))
+//                        break outloop;
+//                    System.out.print("First value is: "+p+"\n");
+//                    count ++;
+//                }
+//                if (count == 1) {
+//                    System.out.print("Enter second value: ");
+//                    q = sc.nextInt();
+//                    if (wqu.check_Value_Size(q))
+//                        break outloop;
+//                    System.out.print("Second value is: "+q+"\n");
+//                    count ++;
+//                }
+//                if (!wqu.connected(p, q)) {
+//                    wqu.union(p,q);
+//                    //if p and q have the same depth size, q gets p root
+//                    System.out.print("union("+p+", "+q+")\n");
+//                }
+//            }
+//
+//
+//            c --;
+//            count = 0;
+//        }
+//
+//        wqu.toStringArr();
+//
+//        int[] test = {4,3,8,9,5,6,0,1,2,7};
+//
+//        for (int i = 0; i < test.length; i++) {
+//            System.out.print("Testing largest: Input => "+test[i]+" and the max value is: "+wqu.find(test[i])+"\n");
+//        }
 
         //Quick Union Example
 //        int count = 0;
