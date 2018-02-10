@@ -40,6 +40,7 @@ public class Quick_Find implements Union_Find{
         for (int i = 0; i < id.length; i++) {
             System.out.print(String.valueOf(id[i])+" ");
         }
+        System.out.println();
     }
 
 

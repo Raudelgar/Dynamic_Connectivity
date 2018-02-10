@@ -40,6 +40,13 @@ public class Quick_Union implements Union_Find {
     public void toStringArr() {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(String.valueOf(arr[i])+" ");
+
         }
+
+        System.out.println();
+    }
+
+    public int[] getArr() {
+        return arr;
     }
 }

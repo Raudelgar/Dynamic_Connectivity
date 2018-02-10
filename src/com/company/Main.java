@@ -1,15 +1,18 @@
 package com.company;
 
+import java.nio.file.Path;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        //Quick Union Example
+        //Weighted Quick Union Example
         int count = 0;
         int p = 0;
         int q = 0;
+        PathCompresion_Quick_Union pcqu;
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter N value: ");
         int N = sc.nextInt();
@@ -54,6 +57,9 @@ public class Main {
 //        int count = 0;
 //        int p = 0;
 //        int q = 0;
+//        PathCompresion_Quick_Union pcqu;
+//
+//
 //        Scanner sc = new Scanner(System.in);
 //        System.out.print("Enter N value: ");
 //        int N = sc.nextInt();
@@ -90,6 +96,31 @@ public class Main {
 //        }
 //
 //        qu.toStringArr();
+//
+//          //Improve Quick Union with Path Compression
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("Do you want apply Path Compress(Y/N): ");
+//        String answer = scan.nextLine();
+//
+//        if(!answer.equalsIgnoreCase("Y")) {
+//            System.exit(1);
+//        }
+//
+//        System.out.print("How many nodes wants to test: ");
+//        int node = scan.nextInt();
+//
+//        pcqu = new PathCompresion_Quick_Union();
+//
+//        while (node >= 0) {
+//            System.out.print("Enter node number: ");
+//            int n = scan.nextInt();
+//            pcqu.rootPathCompress(n,qu.getArr());
+//
+//            node --;
+//        }
+//
+//        qu.toStringArr();
+
 
         //Quick Find Example
 //        int count = 0;
