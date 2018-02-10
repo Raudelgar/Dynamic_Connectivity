@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340aedbf-6bd1-46ca-b8d6-7824fea476fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dynamic_Connectivity/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/Dynamic_Connectivity/com/company/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dynamic_Connectivity/com/company/Quick_Find.class" afterPath="$PROJECT_DIR$/out/production/Dynamic_Connectivity/com/company/Quick_Find.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dynamic_Connectivity/com/company/Quick_Union.class" afterPath="$PROJECT_DIR$/out/production/Dynamic_Connectivity/com/company/Quick_Union.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dynamic_Connectivity/com/company/Weighted_Quick_Union.class" afterPath="$PROJECT_DIR$/out/production/Dynamic_Connectivity/com/company/Weighted_Quick_Union.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Quick_Find.java" afterPath="$PROJECT_DIR$/src/com/company/Quick_Find.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Quick_Union.java" afterPath="$PROJECT_DIR$/src/com/company/Quick_Union.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Weighted_Quick_Union.java" afterPath="$PROJECT_DIR$/src/com/company/Weighted_Quick_Union.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="98" column="2" lean-forward="true" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+            <state relative-caret-position="460">
+              <caret line="107" column="2" lean-forward="true" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,17 +100,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Weighted_Quick_Union.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Weighted_Quick_Union.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Weighted_Quick_Union.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+            <state relative-caret-position="264">
+              <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding>
                 <element signature="e#540#541#0" expanded="true" />
                 <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#962#963#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,8 +120,8 @@
       <file leaf-file-name="PathCompresion_Quick_Union.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/PathCompresion_Quick_Union.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -162,8 +155,8 @@
         <option value="$PROJECT_DIR$/src/com/company/Quick_Find.java" />
         <option value="$PROJECT_DIR$/src/com/company/Quick_Union.java" />
         <option value="$PROJECT_DIR$/src/com/company/PathCompresion_Quick_Union.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Weighted_Quick_Union.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Weighted_Quick_Union.java" />
       </list>
     </option>
   </component>
@@ -443,34 +436,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="107" column="2" lean-forward="true" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/PathCompresion_Quick_Union.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="200">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Weighted_Quick_Union.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        <state relative-caret-position="264">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding>
             <element signature="e#540#541#0" expanded="true" />
             <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="98" column="2" lean-forward="true" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
           </folding>
         </state>
       </provider>

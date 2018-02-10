@@ -33,9 +33,11 @@ public class Weighted_Quick_Union implements Union_Find{
         if(sz[a] >= sz[b]) {
             arr[b] = a;
             sz[a] += 1;
+            //sz[a] += sz[b];
         }else {
             arr[a] = b;
             sz[b] += 1;
+            //sz[b] += sz[a];
         }
     }
 
